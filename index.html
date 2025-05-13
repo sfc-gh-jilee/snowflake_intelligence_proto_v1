@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TextStreamer Chat UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="textStreamer.js" defer></script>
+  <script src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js" type="module"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div id="app">
+        <div id="appbar">
+            <div class="left"><button class="icon back">Back</button><h1 id="chatTitle">New chat</h1></div>
+            <div class="right"><button class="regular" id="showAgentDetails">Agent details</button></div>
+        </div>
+        <div id="sidenav"><div class="top"></div><div class="bottom"></div></div>
+        <div id="demo"></div>
+    </div>
+    <div id="details">
+        <div class="panelbar">
+            <div class="left"><h2>Product Management Insights</h2></div>
+            <div class="right"><button class="icon close" id="hideAgentDetails">Back</button></div>
+        </div>
+        <div class="panelContent">
+            <div class="panelSection sectionAgentOverview">
+                <!-- <h3>Agent overview</h3> -->
+                <p>
+                    An AI-powered analytics tool designed to help product managers make data-driven decisions. It provides actionable insights on user behavior, feature adoption, retention trends, and market performance.
+                </p>
+            </div>
+            <div class="panelSection sectionConnectedTo">
+                <h3>Conncted to</h3>
+                <ul>
+                    <li><a href="#"><span class="icon16 snowflake"></span>Snowflake</a></li>
+                </ul>
+            </div>
+            <div class="panelSection sectionKeyDataObjects">
+                <h3>Key data objects</h3>
+                <ul>
+                    <li><a href="#">Active Users</a></li>
+                    <li><a href="#">Feature Usage</a></li>
+                    <li><a href="#">Churn Rate</a></li>
+                </ul>
+            </div>
+            <div class="panelSection sectionSampleQuestions">
+                <h3>Sample questions</h3>
+                <ul>
+                    <li><a href="#">Which features are being used the most/least?</a></li>
+                    <li><a href="#">What are the most common issues raised by customers?</a></li>
+                    <li><a href="#">Did the new pricing update affect user retention?</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
