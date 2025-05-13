@@ -1,0 +1,1 @@
+# snowflake_intelligence_proto_v1
